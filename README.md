@@ -1,4 +1,4 @@
-# Genome Sequence Processing Script
+
 
 # Genome Sequence Processing Script
 
