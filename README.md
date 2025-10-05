@@ -58,3 +58,5 @@ This script will:
    - `train` – for training
    - `valid` – for validation
    - `test` – for testing
+  
+### please remove the -s(downsample) option from `generate_data.sh` to generate the all data
