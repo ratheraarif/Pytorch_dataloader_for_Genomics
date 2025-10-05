@@ -27,9 +27,9 @@ This script will:
 1. Create a new folder called `train_data`.
 2. Inside `train_data`, generate a folder named `h5py`.
 3. The `h5py` folder contains the following datasets:
-   - `train` – for training
-   - `valid` – for validation
-   - `test` – for testing
+   - `all_train` – for training
+   - `all_valid` – for validation
+   - `all_test` – for testing
   
 ### please remove the -s(downsample) option from `generate_data.sh` to generate the all data
 
