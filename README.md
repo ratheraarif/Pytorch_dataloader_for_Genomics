@@ -1,9 +1,13 @@
 # Genome Sequence Processing Script
 
-This script computes model sequences from the genome and extracts DNA coverage values.  
-It requires a FASTA file and a targets file.
+# Genome Sequence Processing Script
 
-## Usage
+*In the same style as [Enformer](https://www.nature.com/articles/s41592-021-01252-x), [AlphaGenome](https://www.biorxiv.org/content/10.1101/2025.06.25.661532v1), and [Borzoi](https://www.nature.com/articles/s41588-024-02053-6), this script is designed to prepare genomic datasets and create a PyTorch DataLoader for downstream modeling.*
+
+This script computes model sequences from the genome and extracts DNA coverage values. It requires a FASTA file and a targets file.
+
+
+
 
 
 
