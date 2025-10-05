@@ -2,13 +2,39 @@
 
 # Genome Sequence Processing Script
 
-*In the same style as [Enformer](https://www.nature.com/articles/s41592-021-01252-x), [AlphaGenome](https://www.biorxiv.org/content/10.1101/2025.06.25.661532v1), and [Borzoi](https://www.nature.com/articles/s41588-024-02053-6), this script is designed to prepare genomic datasets and create a PyTorch DataLoader for downstream modeling.*
+*In the same style as [Enformer](https://www.nature.com/articles/s41592-021-01252-x), [AlphaGenome](https://www.biorxiv.org/content/10.1101/2025.06.25.661532v1), and [Borzoi](https://www.nature.com/articles/s41588-024-02053-6)*
 
-This script computes model sequences from the genome and extracts DNA coverage values. It requires a FASTA file and a targets file.
-
-
+this script is designed to prepare genomic datasets and create a PyTorch DataLoader for downstream modeling. While all of these models are originally trained in TensorFlow and use TFRecord files, which are incompatible with PyTorch, this script provides a bridge by enabling PyTorch-ready data pipelines. It supports flexible sequence cropping, downsampling, handling of unmappable regions
 
 
+
+
+# Data Preparation Instructions
+
+## Step 1: Download Test Data
+Run the Jupyter notebook `step1.ipynb` to download all necessary test data.  
+This ensures you have the correct datasets before proceeding.
+
+## Step 2: Generate Training Data
+Run the shell script:
+
+```bash
+sh generate_data.sh
+```
+
+This script will:
+
+1. Create a new folder called `output`.
+2. Inside `output`, generate a folder named `h5py`.
+3. The `h5py` folder contains the following datasets:
+   - `train` – for training
+   - `valid` – for validation
+   - `test` – for testing
+  
+### please remove the -s(downsample) option from `generate_data.sh` to generate the all data
+
+
+## options for `generate_data.sh`
 
 
 
@@ -37,26 +63,6 @@ This script computes model sequences from the genome and extracts DNA coverage v
 | `-v`                       | Proportion of data for validation            | 0.05       |
 
 
-# Data Preparation Instructions
 
-## Step 1: Download Test Data
-Run the Jupyter notebook `step1.ipynb` to download all necessary test data.  
-This ensures you have the correct datasets before proceeding.
 
-## Step 2: Generate Training Data
-Run the shell script:
 
-```bash
-sh generate_data.sh
-```
-
-This script will:
-
-1. Create a new folder called `output`.
-2. Inside `output`, generate a folder named `h5py`.
-3. The `h5py` folder contains the following datasets:
-   - `train` – for training
-   - `valid` – for validation
-   - `test` – for testing
-  
-### please remove the -s(downsample) option from `generate_data.sh` to generate the all data
