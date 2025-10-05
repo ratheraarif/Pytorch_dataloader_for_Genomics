@@ -34,7 +34,7 @@ This script will:
 ### please remove the -s(downsample) option from `generate_data.sh` to generate the all data
 
 
-## options for `generate_data.sh`
+## options for `basenji_data_h5.py`
 
 
 
