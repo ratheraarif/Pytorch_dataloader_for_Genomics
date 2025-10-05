@@ -24,8 +24,8 @@ sh generate_data.sh
 
 This script will:
 
-1. Create a new folder called `output`.
-2. Inside `output`, generate a folder named `h5py`.
+1. Create a new folder called `train_data`.
+2. Inside `train_data`, generate a folder named `h5py`.
 3. The `h5py` folder contains the following datasets:
    - `train` – for training
    - `valid` – for validation
