@@ -31,7 +31,7 @@ This script will:
    - `all_valid` – for validation
    - `all_test` – for testing
   
-### please remove the -s(downsample) option from `generate_data.sh` to generate the all data. I have used -s .1 as a quick test to process the data fast(just for the test)
+### please remove the -s(downsample) option from `generate_data.sh` to generate all data. I have used -s .1 as a quick test to process the data fast(just for the test)
 
 
 ## options for `basenji_data_h5.py`
