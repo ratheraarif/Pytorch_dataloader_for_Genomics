@@ -25,13 +25,13 @@ sh generate_data.sh
 This script will:
 
 1. Create a new folder called `train_data`.
-2. Inside `train_data`, generate a folder named `h5py`.
+2. Inside `train_data`, generates a folder named `h5py`.
 3. The `h5py` folder contains the following datasets:
    - `all_train` – for training
    - `all_valid` – for validation
    - `all_test` – for testing
   
-### please remove the -s(downsample) option from `generate_data.sh` to generate the all data
+### please remove the -s(downsample) option from `generate_data.sh` to generate the all data. I have used -s .1 as a quick test to process the data fast(just for the test)
 
 
 ## options for `basenji_data_h5.py`
