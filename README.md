@@ -4,7 +4,7 @@
 
 *In the same style as [Enformer](https://www.nature.com/articles/s41592-021-01252-x), [AlphaGenome](https://www.biorxiv.org/content/10.1101/2025.06.25.661532v1), and [Borzoi](https://www.nature.com/articles/s41588-024-02053-6)*
 
-this script is designed to prepare genomic datasets and create a PyTorch DataLoader for downstream modeling from Bigwig or narrowpeaks files. While all of these models are originally trained in TensorFlow and use TFRecord files, which are incompatible with PyTorch, this script provides a bridge by enabling PyTorch-ready data pipelines tot train deep learning models. It supports flexible sequence cropping, downsampling, handling of unmappable regions etc.
+this script is designed to prepare genomic datasets and create a PyTorch DataLoader for downstream modeling from Bigwig or narrowpeaks files. While all of these models are originally trained in TensorFlow and use TFRecord files, which are incompatible with PyTorch, this script provides a bridge by enabling PyTorch-ready data pipelines to train deep learning models depending upon your use case. It supports flexible sequence cropping, downsampling, handling of unmappable regions etc.
 
 
 
