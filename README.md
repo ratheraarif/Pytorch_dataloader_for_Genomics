@@ -65,5 +65,5 @@ This script will:
 
 
 ## step 3: create pytorch data loaders
-##### open the `data_loader.ipynb` for creating the pytorch dataloaders with options for shift augmentation, reverse complement augmentation etc
+##### open the `data_loader.ipynb` for creating pytorch dataloaders with options for shift augmentation, reverse complement augmentation etc
 
